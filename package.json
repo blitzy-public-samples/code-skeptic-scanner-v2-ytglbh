@@ -1,0 +1,59 @@
+{
+  "name": "code-skeptic-scanner",
+  "version": "1.0.0",
+  "description": "A system to monitor, analyze, and respond to skeptical opinions about AI coding tools on Twitter",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "natural": "^5.1.13",
+    "notion-client": "^4.3.2",
+    "openai": "^3.0.0",
+    "redis": "^3.1.2",
+    "twitter-api-v2": "^1.6.5",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.22",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
+// Human tasks:
+// - Regularly update dependencies to their latest stable versions
+// - Review and optimize the list of dependencies, removing any unused packages
+// - Consider adding scripts for database migrations and seeding
+// - Implement a script for generating API documentation (e.g., using Swagger)
+// - Add a script for running security audits on dependencies
+// - Consider implementing semantic versioning for the project
+// - Add more detailed descriptions for each npm script to improve clarity for developers
